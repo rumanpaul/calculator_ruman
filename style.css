@@ -1,71 +1,98 @@
-body
-{
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'DM Mono';
+	/* border: 1px solid yellow; */
 }
 
-.calci
-{
-	width: 500px;
-	padding-top: 100px;
-	padding-bottom: 100px;
+body {
+	background-color: rgb(0, 0, 0);
+	/* background-color: rgb(255, 255, 255); */
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calci {
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	height: 80vh;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	position: absolute;
-	top: 50%;
-	left: 70%;
-	transform: translate(-50%,50%);
 	transition: 0.25px;
-	background-color:black;
+	border-radius: 20px;
 	text-align: center;
 }
 
-#display
-{
-	border: none;
-	background-color: white;
-	border-radius: 30px;
-	width: 245;
-	font-size: 20;
+.calcucontainer {
+	background-color: #201830;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid rgba(49, 145, 255, 0.667);
+	border-radius: 20px;
+	padding: 30px;
+}
+
+#display {
+	background-color: #D3D3D3;
+	border-radius: 15px;
+	width: 250px;
+	height: 50px;
+	font-size: 25px;
 	font-family: sans-serif;
-	font-weight: 300;
-	height: 60;
+	padding: 10px;
 	margin: auto;
-	border: 2px solid white;
+	border: 1px solid rgba(201, 201, 201, 0.585);
 	color: black;
-
+	margin: 10px;
+	color:rgb(0, 0, 0);
 }
 
-.btndesign
-{
-	width: 55;
-	height: 55;
-	padding-top: -1;
+.btn {
+	width: 50px;
+	height: 50px;
+	margin: 5px;
 	border: none;
 	font-family: sans-serif;
-	font-size: 20;
+	font-size: 20px;
 	font-weight: 300;
 	border-radius: 30px;
-	margin: 1.5;
-
+	border: 2px solid black;
+	background-color: #90EE90;
 }
 
-.operatorDesign
-{
-	width: 55;
-	height: 55;
-	padding-top: -1;
-	border: none;
-	font-family: sans-serif;
-	font-size: 20;
-	font-weight: 300;
-	border-radius: 30px;
-	margin: 1.5;
-	transition: 0.25px;
+.operatorDesign {
+	background-color: green;
 	cursor: pointer;
-
+	color:whitesmoke;
 }
-
-.operatorDesign:hover
-{
-	
-
+.equalsbtn{
+	color:red;
+	background-color: black;
+	border-radius: 10px;
+	width:120px;
 }
+.darkbtn{
+	color:red;
+	background-color: rgb(66, 0, 66);
+	/* border-radius: 10px; */
+}
+input{
+	font-family: inherit !important;
+	font-weight: bold !important;
+}
+.btn:active{
+	transform: scale(1.02);
+}
+/* .operatorDesign:hover {} */
